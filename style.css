@@ -1,31 +1,96 @@
-* {
-    margin-left: auto;
-    margin-right: auto;
-    text-align: center;
+.fantasy {
+    background-color: red;
 }
-.MainBooks {
-    padding-top: 20px;
-    background-color: rgb(224, 231, 203);
-    border-radius: 200px;
-    border-color: rgb(113, 179, 142);
-    border-style: solid;
-    border-width: 15px;
+.horror {
+    background-color: red;
+}
+
+pre {
+    text-align: left;
+    font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+}
+
+
+mark {
+    background-color: pink;
+    border-radius: 10px;
+    padding-left: 5px;
+    padding-right: 5px;
+    padding-bottom: 1px;
+    padding-top: 1x;
+   
+}
+
+.sidebar {
+    background: linear-gradient(rgb(120, 183, 217), rgb(120, 183, 217));
+    margin: 0;
+    padding: 0;
+    width: 200px;
+    position: fixed;
+    height: 100%;
+    overflow: auto;
+}
+.sidebar a {
+    text-decoration: none;
+    display: block;
+    color: black;
+    padding: 16px;
+    text-align: left;
+}
+.sidebar a.active {
+    background-color: rgb(65, 175, 170);
+    color:aliceblue;
+}
+
+.sidebar a:hover {
+    background-color: rgb(65, 175, 170);
+    color: white;
+}
+
+.sidebar a:hover:not(.active) {
+    background-color:rgb(rgb(167, 222, 189));
+   
 }
 
 img {
-    position: center;
     padding-top: 20px;
+    padding-bottom: 20px;
     width: 150px;
 }
 
-.containter {
+.MainContent {
+    overflow: auto;
+    background-color: rgb(rgb(167, 222, 189));
+
+}
+.containerBooks {
+    display: grid;
+    grid-template-columns: auto auto auto ;
+    justify-content: center;
+    gap: 20px;
+}
+
+.containerBooks-Book {
+    overflow: auto;
+    text-align: center;
+    font-size: 15px;
+    border-width: 10px;
+    border-style:double;
+    border-color: rgb(65, 175, 170);
+    border-radius: 20px;
+    padding: 25px;
+}
+
+.container {
+    overflow: auto;
     display: grid;
     grid-template-areas: 
-    "header header header"
+    "header header"
     "sidebar main main"
     "footer footer footer";
 }
 body {
+    overflow: auto;
     text-align: center;
     font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
     background-color:rgb(167, 222, 189)
@@ -47,26 +112,28 @@ button:hover {
     background-color: rgb(179, 205, 235);
 }
 
-button {
+.button {
+    color: black;
+    text-decoration: none;
+    box-shadow: 2px 2px 2px #000000;
     border-radius: 60px;
     padding-left: 20px;
     padding-right: 20px;
     padding-top: 10px;
     padding-bottom: 10px;
     font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
-    background-color: rgb(255, 255, 255);
+    background-color: rgb(100, 224, 218);
+}
+.button:hover {
+    color: white;
+    background-color:rgb(135, 165, 231)
 }
 
 .Foot {
+    position: fixed;
+    bottom: 0;
+    width: 100%;
     grid-area: Foot;
     padding: 10px;
     background: linear-gradient(rgb(120, 183, 217), rgb(135, 165, 231));
-}
-.Books {
-    margin-left: 150px;
-    position: relative;
-    border-color: rgb(111, 164, 199);
-    width: 250px;
-    border-style: solid;
-    border-width: 7px;
 }
