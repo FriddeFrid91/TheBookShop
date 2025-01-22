@@ -1,7 +1,7 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
-    <link rel="stylesheet" href="style.css"></stylesheet>
+    <link rel="stylesheet" href="style.css">
     <title>The Book Shop</title>
     <meta charset="UTF-8">
     <meta name="viewport" 
@@ -9,66 +9,70 @@
     initial-scale=1.0">
 <body>
     <div class="container">
-        <div>
-        <header>
+        <header class="header">
             <h1>THE HKR BOOK SHOP</h1>
-            <nav>HOME</nav>
-            <nav>CATEGORIES</nav>
-            <nav>CART</nav>
+            <nav>
+                <button>HOME</button>
+                <button>CATEGORIES</button>
+                <button>CART</button>
+        </nav>
         </header>
     </div>
-    <div class="sidebar">
-        <a class="active" href="home">HOME</a>
-        <a href="#fantasy">Fantasy</a>
-        <a href="#categories">Science Fiction</a>
-        <a href="#categories">Romance</a>
-        <a href="#categories">Mystery</a>
-        <a href="#categories">Thriller</a>
-        <a href="#horror">Horror</a>
+    <div id="mySidebar" class="sidebar">     
+        <ul>
+        <li><a class="active" href="categories">CATEGORIES</a></li>
+            <li><a href="#fantasy">Fantasy</a></li>
+                <li><a href="#horror">Horror</a></li>
+                    <li><a href="#science-fiction">Science Fiction</a></li>
+                        <li><a href="#categories">Mystery</a></li>
+                            <li><a href="#categories">Thriller</a></li>
+        </ul>
     </div>
-
-        <main class="MainContent">
-            
+    
+        <main class="MainContent">          
             <section id="fantasy">
-                <h4>Fantasy</h4>
+                <header class ="fantazy">
+                    <h2>Fantasy</h2>
+                </header>
                 <div class="containerBooks">
                     <div class="containerBooks-Book">
                         <img src="TheLastWish.jpg" alt="The Last Wish">
-                        <h3>The Last Wish</h3>
-                        <p><i>Andrzej Sapkowski</i></p>
-                        <pre>
+                        <h4>The Last Wish</h4>
+                        <h3><i>Andrzej Sapkowski</i></h3>
+                        <p>
 The Last Wish by Andrzej Sapkowski follows Geralt of Rivia, 
 a monster hunter, as he navigates moral dilemmas, 
 encounters mythical creatures, and forms key bonds, 
 including with the sorceress Yennefer, in a world full of 
-conflict and prejudice.</pre>            
-                        <p><mark><b>200:-</b></mark></p>
+conflict and prejudice.</p>            
+<h1><mark><b>199:-</b></mark></h1>
                         <a href="cart.html" class="button">Add To Cart</a>
                     </div>
                     <div class="containerBooks-Book">
                         <img src="TimeOfContempt.jpg" alt="Time Of Contempt">
                         <h3>Time Of Contempt</h3>
-                        <p><i>Andrzej Sapkowski</i></p>
-                        <pre>
-The Last Wish by Andrzej Sapkowski follows Geralt of Rivia, 
-a monster hunter, as he navigates moral dilemmas, 
-encounters mythical creatures, and forms key bonds, 
-including with the sorceress Yennefer, in a world full of 
-conflict and prejudice.</pre> 
-                        <p><mark><b>200:-</b></mark></p>
+                        <h4><i>Andrzej Sapkowski</i></h4>
+                        <p>
+                            In The Time of Contempt, political chaos erupts as a mage coup forces Ciri to 
+                            flee to the desert, where she discovers her resilience and powers. 
+                            Geralt is gravely injured and unable to protect her, while Nilfgaard's empire 
+                            marches toward war. The story highlights betrayal, survival, 
+                            and Ciri’s transformation.</p> 
+                            <h1><mark><b>139:-</b></mark></h1>
                         <a href="cart.html" class="button">Add To Cart</a>
                     </div>
                     <div class="containerBooks-Book">
-                        <img src="TheLastWish.jpg" alt="The Last Wish">
+                        <img src="BloodOfElves.png" alt="Blood Of Elves">
                         <h3>Blood Of Elves</h3>
-                        <p><i>Andrzej Sapkowski</i></p>
-                        <pre>
-The Last Wish by Andrzej Sapkowski follows Geralt of Rivia, 
-a monster hunter, as he navigates moral dilemmas, 
-encounters mythical creatures, and forms key bonds, 
-including with the sorceress Yennefer, in a world full of 
-conflict and prejudice.</pre>
-                        <p><mark><b>200:-</b></mark></p>
+                        <h4><i>Andrzej Sapkowski</i></h4>
+                        <p>
+                            In Blood of Elves, Ciri trains with Geralt at Kaer 
+                            Morhen and later with Yennefer 
+                            to control her magical abilities. Her elder blood 
+                            and destiny attract dangerous enemies, 
+                            including Nilfgaard. The story sets the stage for 
+                            political turmoil and Ciri's central role in the saga.</p>
+                            <h1><mark><b>79:-</b></mark></h1>
                         <a href="cart.html" class="button">Add To Cart</a>
                     </div>
                 </div>
@@ -76,36 +80,105 @@ conflict and prejudice.</pre>
         </section>
 
         <section id="horror">
-            <h4>Horror</h4>
+            <h2>Horror</h2>
             <div class="containerBooks">
                 <div class="containerBooks-Book">
-                    <img src="TheLastWish.jpg" alt="The Last Wish">
-                    <h3>The Last Wish</h3>
-                    <p><i>Andrzej Sapkowski</i></p>
-                    <p><mark><b>200:-</b></mark></p>
+                    <img src="TheShining.jpg" alt="The Shining">
+                    <h3>The Shining</h3>
+                    <h4><i>Stephen King</i></h4>
+                    <p>
+                        In The Shining by Stephen King, Jack Torrance becomes the 
+                        caretaker of the haunted Overlook Hotel,
+                        where supernatural forces and isolation drive him mad. 
+                        His psychic son, Danny, uncovers the hotel’s dark secrets, 
+                        and he and his mother must fight to survive Jack’s
+                        descent into violence.</p>
+                        <h1><mark><b>99:-</b></mark></h1>
                     <a href="cart.html" class="button">Add To Cart</a>
                 </div>
                 <div class="containerBooks-Book">
-                    <img src="TimeOfContempt.jpg" alt="Time Of Contempt">
-                    <h3>Time Of Contempt</h3>
-                    <p><i>Andrzej Sapkowski</i></p>
-                    <p><mark><b>200:-</b></mark></p>
+                    <img src="ItBook.png" alt="Stephen King's It">
+                    <h3>It</h3>
+                    <h4><i>Stephen King</i></h4>
+                    <p>
+                        It by Stephen King follows the Losers' Club as they battle Pennywise, 
+                        a shape-shifting entity that preys on children in Derry every 27 years. 
+                         As kids and later as adults, they confront their fears to defeat the monster, 
+                        highlighting themes of friendship and courage.</p>
+                    <h1><mark><b>149:-</b></mark></h1>
                     <a href="cart.html" class="button">Add To Cart</a>
                 </div>
                 <div class="containerBooks-Book">
-                    <img src="TheLastWish.jpg" alt="The Last Wish">
-                    <h3>Blood Of Elves</h3>
-                    <p><i>Andrzej Sapkowski</i></p>
-                    <p><mark><b>200:-</b></mark></p>
-                    <a href="cart.html" class="button">Add To Carte</a>
+                    <img src="MiseryBook.jpg" alt="Misery">
+                    <h3>Misery</h3>
+                    <h4><i>Stephen King</i></h4>
+                    <p>Misery by Stephen King follows author Paul Sheldon,
+                         held captive by obsessive fan Annie Wilkes, 
+                         who forces him to write a new novel. 
+                         Trapped and tortured, Paul fights to
+                          survive and escape her control.</p>
+                          <h1><mark><b>49:-</b></mark></h1>
+                    <a href="cart.html" class="button">Add To Cart</a>
                 </div>
             </div>
         </div>
     </section>
 
-                <div>
-                    <footer class="Foot"><p>&copy; All Rights Reserved - Frida Jóhannesson</p></footer>
-                </div>
+    <section id="science-fiction">
+        <h2>Science Fiction</h2>
+        <div class="containerBooks">
+            <div class="containerBooks-Book">
+                <img src="Neuromancer.jpg" alt="Neuromancer">
+                <h3>Neuromancer</h3>
+                <h4><i>William Gibson</i></h4>
+                <p>Neuromancer by William Gibson follows Case, 
+                    a washed-up hacker, hired for a final job 
+                    by a mysterious employer, Armitage, and a 
+                    skilled mercenary, Molly. 
+                    Together, they navigate a dystopian cyberpunk 
+                    world to hack into a powerful AI. 
+                    The novel explores themes of technology, 
+                    identity, and humanity in a digitized future.</p>
+                    <h1><mark><b>129:-</b></mark></h1>
+                <a href="cart.html" class="button">Add To Cart</a>
+            </div>
+            <div class="containerBooks-Book">
+                <img src="MonaLisaOverdrive.jpg" alt="Mona Lisa Overdrive">
+                <h3>Mona Lisa Overdrive</h3>
+                <h4><i>William Gibson</i></h4>
+                <p>
+                    Mona Lisa Overdrive by William Gibson is 
+                    the final book in the Sprawl trilogy, 
+                    intertwining four narratives: 
+                    Angie, a famous simstim star 
+                    connected to cyberspace; 
+                    Mona, a street girl drawn into 
+                    a conspiracy; Slick, a mechanic 
+                    aiding a mysterious AI; and Kumiko, 
+                    the daughter of a Yakuza boss seeking refuge. 
+                    Their paths converge as an AI seeks transcendence, 
+                    exploring themes of identity, technology, 
+                    and humanity's relationship with artificial intelligence.</p>
+                    <h1><mark><b>139:-</b></mark></h1>
+                <a href="cart.html" class="button">Add To Cart</a>
+            </div>
+            <div class="containerBooks-Book">
+                <img src="CountZero.jpg" alt="Count Zero">
+                <h3>Count Zero</h3>
+                <h4><i>William Gibson</i></h4>
+                <p>Count Zero by William Gibson is a cyberpunk novel set in the same world as Neuromancer. It follows three interwoven stories: Turner, a mercenary hired to extract a corporate defector; Bobby, a novice hacker caught in a deadly conspiracy; and Marly, an art dealer investigating mysterious AI-created works. Their journeys converge, exploring themes of corporate power, artificial intelligence, and human connection.</p>
+                <h1><mark><b>119:-</b></mark></h1>
+                <label for="quantity">Quantity: </label>
+                <input type="number" id="quantity" name="quantity" min="1" max="5">
+                <a href="cart.html" class="button">Add To Cart</a>
+            </div>
+        </div>
+    </div>
+</section>
+
+<footer class="Foot"><p>&copy; 
+    <h5>All Rights Reserved. Contact us by 
+    <a href="fakemail@fakemail.com">email</a></h5></footer>            
         </main>
     </div>
 

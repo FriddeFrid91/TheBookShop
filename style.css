@@ -1,15 +1,27 @@
-.fantasy {
-    background-color: red;
-}
-.horror {
-    background-color: red;
-}
-
-pre {
+p {
     text-align: left;
+}
+.openbtn {
+
     font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+    border-style: none;
+    background-color: rgb(65, 175, 170);
 }
 
+button {
+    font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+    background-color: rgb(65, 175, 170);
+    border-radius: 20px;
+}
+
+button:hover {
+    background-color: whitesmoke;
+}
+
+ul {
+    list-style: none;
+    padding: 10px;
+}
 
 mark {
     background-color: pink;
@@ -20,15 +32,33 @@ mark {
     padding-top: 1x;
    
 }
+input[type=number] {
+    background-color: whitesmoke;
+    border-radius: 15px;
+    text-align: center;
+}
+
+
+.fantazy{
+    color:black;
+    padding-left: 200px;
+    text-align: center;
+}
+
 
 .sidebar {
+    grid-area: sidebar;
+    transition: 0.5s;
+    z-index: 1;
+    top: 0;
+    left: 0;
     background: linear-gradient(rgb(120, 183, 217), rgb(120, 183, 217));
     margin: 0;
     padding: 0;
     width: 200px;
     position: fixed;
     height: 100%;
-    overflow: auto;
+
 }
 .sidebar a {
     text-decoration: none;
@@ -36,6 +66,7 @@ mark {
     color: black;
     padding: 16px;
     text-align: left;
+    transition: 0.3s;
 }
 .sidebar a.active {
     background-color: rgb(65, 175, 170);
@@ -48,22 +79,34 @@ mark {
 }
 
 .sidebar a:hover:not(.active) {
+    border-radius: 20px;
     background-color:rgb(rgb(167, 222, 189));
    
+}
+
+.sidenav .closebutton {
+    position: absolute;
+    top: 0;
+    right: 25px;
+    font-size: 36px;
+    margin-left: 50px;
 }
 
 img {
     padding-top: 20px;
     padding-bottom: 20px;
-    width: 150px;
+    width: 120px;
 }
 
 .MainContent {
+    grid-area: main;
     overflow: auto;
     background-color: rgb(rgb(167, 222, 189));
+  
 
 }
 .containerBooks {
+    margin-left: 200px;
     display: grid;
     grid-template-columns: auto auto auto ;
     justify-content: center;
@@ -78,15 +121,14 @@ img {
     border-style:double;
     border-color: rgb(65, 175, 170);
     border-radius: 20px;
-    padding: 25px;
+    padding: 20px;
 }
 
 .container {
-    overflow: auto;
     display: grid;
     grid-template-areas: 
-    "header header"
-    "sidebar main main"
+    "header header header"
+    "main main main"
     "footer footer footer";
 }
 body {
@@ -96,15 +138,21 @@ body {
     background-color:rgb(167, 222, 189)
 }
 
-nav {
-    background-color: rgb(rgb(167, 222, 189));
-}
-
 .header {
+    padding-left: 200px;
+    grid-area: header;
+    padding-bottom: 15px;
+    background-color: rgb(65, 175, 170);
     text-align: center;
+   
 }
 
-button:hover {
+nav {
+    top: 0;
+    background-color: rgb(65, 175, 170);
+}
+
+.button:hover {
     padding-left: 22px;
     padding-right: 22px;
     padding-top: 12px;
@@ -115,8 +163,6 @@ button:hover {
 .button {
     color: black;
     text-decoration: none;
-    box-shadow: 2px 2px 2px #000000;
-    border-radius: 60px;
     padding-left: 20px;
     padding-right: 20px;
     padding-top: 10px;
@@ -130,10 +176,15 @@ button:hover {
 }
 
 .Foot {
-    position: fixed;
+    grid-area: footer;
+    position: auto;
     bottom: 0;
     width: 100%;
-    grid-area: Foot;
     padding: 10px;
     background: linear-gradient(rgb(120, 183, 217), rgb(135, 165, 231));
 }
+
+@media only screen and (min-width: 1024px) {
+    body {
+    }
+  }
