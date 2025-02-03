@@ -1,190 +1,77 @@
-p {
-    text-align: left;
-}
-.openbtn {
-
-    font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
-    border-style: none;
-    background-color: rgb(65, 175, 170);
-}
-
-button {
-    font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
-    background-color: rgb(65, 175, 170);
-    border-radius: 20px;
-}
-
-button:hover {
-    background-color: whitesmoke;
-}
-
-ul {
-    list-style: none;
-    padding: 10px;
-}
-
-mark {
-    background-color: pink;
-    border-radius: 10px;
-    padding-left: 5px;
-    padding-right: 5px;
-    padding-bottom: 1px;
-    padding-top: 1x;
-   
-}
-input[type=number] {
-    background-color: whitesmoke;
-    border-radius: 15px;
-    text-align: center;
-}
-
-
-.fantazy{
-    color:black;
-    padding-left: 200px;
-    text-align: center;
-}
-
-
-.sidebar {
-    grid-area: sidebar;
-    transition: 0.5s;
-    z-index: 1;
-    top: 0;
-    left: 0;
-    background: linear-gradient(rgb(120, 183, 217), rgb(120, 183, 217));
+* {
     margin: 0;
-    padding: 0;
-    width: 200px;
-    position: fixed;
-    height: 100%;
-
 }
-.sidebar a {
-    text-decoration: none;
-    display: block;
-    color: black;
-    padding: 16px;
-    text-align: left;
-    transition: 0.3s;
-}
-.sidebar a.active {
-    background-color: rgb(65, 175, 170);
-    color:aliceblue;
-}
-
-.sidebar a:hover {
-    background-color: rgb(65, 175, 170);
-    color: white;
-}
-
-.sidebar a:hover:not(.active) {
-    border-radius: 20px;
-    background-color:rgb(rgb(167, 222, 189));
-   
-}
-
-.sidenav .closebutton {
-    position: absolute;
-    top: 0;
-    right: 25px;
-    font-size: 36px;
-    margin-left: 50px;
-}
-
-img {
-    padding-top: 20px;
-    padding-bottom: 20px;
-    width: 120px;
-}
-
-.MainContent {
-    grid-area: main;
-    overflow: auto;
-    background-color: rgb(rgb(167, 222, 189));
-  
-
-}
-.containerBooks {
-    margin-left: 200px;
-    display: grid;
-    grid-template-columns: auto auto auto ;
-    justify-content: center;
-    gap: 20px;
-}
-
-.containerBooks-Book {
-    overflow: auto;
-    text-align: center;
-    font-size: 15px;
-    border-width: 10px;
-    border-style:double;
-    border-color: rgb(65, 175, 170);
-    border-radius: 20px;
-    padding: 20px;
-}
-
-.container {
+body {
     display: grid;
     grid-template-areas: 
     "header header header"
-    "main main main"
+    "sidebar main extra"
     "footer footer footer";
-}
-body {
-    overflow: auto;
-    text-align: center;
-    font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
-    background-color:rgb(167, 222, 189)
+    background-color: rgb(132, 205, 188);
+    font-family: Cambria, 
+    Cochin, Georgia, Times, 
+    'Times New Roman', serif;
 }
 
-.header {
-    padding-left: 200px;
+.the-logo {
+    border-radius: 50px;
+    width: 100px;
+    height: 100px;
+}
+
+ul {
+    display: flex;
+    list-style: none;
+}
+nav ul li {
+    padding: 20px;
+    margin: 15px;
+}
+
+nav ul li a {
+   text-underline-offset: 6px;
+}
+
+.books {
+    display: flex;
+    flex-direction: column;
+    width: 200px;
+    background-color: red;
+  
+}
+
+ul li:hover {
+    background-color: rgb(230, 214, 143);
+    padding: 20px;
+    border-radius: 5px;
+    transition: 0.7s;
+}
+
+
+header {
+    display: flex;
+    flex-direction: row;
+    background-color: rgb(35, 162, 167);
+    padding: 30px;
     grid-area: header;
-    padding-bottom: 15px;
-    background-color: rgb(65, 175, 170);
-    text-align: center;
-   
 }
 
-nav {
-    top: 0;
-    background-color: rgb(65, 175, 170);
-}
-
-.button:hover {
-    padding-left: 22px;
-    padding-right: 22px;
-    padding-top: 12px;
-    padding-bottom: 12px;
-    background-color: rgb(179, 205, 235);
-}
-
-.button {
-    color: black;
-    text-decoration: none;
-    padding-left: 20px;
-    padding-right: 20px;
-    padding-top: 10px;
-    padding-bottom: 10px;
-    font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
-    background-color: rgb(100, 224, 218);
-}
-.button:hover {
-    color: white;
-    background-color:rgb(135, 165, 231)
-}
-
-.Foot {
+footer {
     grid-area: footer;
-    position: auto;
-    bottom: 0;
-    width: 100%;
-    padding: 10px;
-    background: linear-gradient(rgb(120, 183, 217), rgb(135, 165, 231));
 }
 
-@media only screen and (min-width: 1024px) {
-    body {
-    }
-  }
+main {
+    grid-area: main;
+}
+
+aside {
+    position: sticky; top: 0;
+    display: flex;
+    flex-direction: column;
+    grid-area: sidebar;
+    justify-content: space-around;
+    list-style: none;
+    background-color: rgb(211, 161, 54);
+    padding: 20px;
+}
+
