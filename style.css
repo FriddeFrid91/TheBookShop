@@ -95,7 +95,7 @@ header h1 {
 
 footer {
     background-color:  rgb(35, 162, 167);
-    padding: 20px;
+    padding: 30px;
     display: flex;
     text-align: center;
     justify-content: center;
@@ -168,6 +168,7 @@ aside {
         display: grid;
         grid-template-areas: 
         "header"
+        "sidebar"
         "main"
         "footer";
     }
