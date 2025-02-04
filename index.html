@@ -7,53 +7,145 @@
     <link rel="stylesheet" href="style.css">
 </head>
 <body>
-    <header> 
+
+    <header class="header"> 
         <img src="TheBookTreeLogo.jpg" class="the-logo" alt="Logo for The Book Tree"></img>
         <h1>The Book Tree</h1>
         <nav>
             <ul>
             <li><a href="#">HOME</a></li> 
-            <li><a href="#">CART</a></li> 
-            <li><a href="#">ABOUT</a></li>
+            <li><a href="#">CATEGORIES</a></li> 
+            <li><a href="cart.html">CART</a></li>
         </ul>
     </nav>
     </header>
     <aside class="sidebar">
         <h2>CATEGORIES</h2>
-        <li><a href="#fantasy">FANTASY</a></li>
-        <li><a href="#horror">HORROR</a></li>
-        <li><a href="#science-fiction">SCIENCE FICTION</a></li>
-        <li><a href="#drama">DRAMA</a></li>
-        <li><a href="#children">CHILDREN</a></li>
-        <li><a href="#history">HISTORY</a></li>
-       
+        <ul><a href="#horror">HORROR</a></ul>
+<ul><a href="#science-fiction">SCIENCE FICTION</a></ul>
+<ul><a href="#drama">DRAMA</a></ul>
+<ul><a href="#children">CHILDREN</a></ul>
+<ul><a href="#history">HISTORY</a></ul>
+
     </aside>
     <main>    
-            <!--books here.-->
-            <section class="books">
-                <div class="container">
-                    <div>
-                        <img src="TheElixir.jpg" alt="The Elixir">
-                    <p>The Elixir</p>
-                </div>
-                    <div><img src="TheCurseOfIvan.jpg" alt="The Curse Of Ivan">
-                    <p>The Curse Of Ivan</p>
-                </div>
-                    <div><img src="TheSagaOfGöte.jpg" alt="The Saga of Göte"><p>The Saga Of Göte</p></div>
-                    <div><img src="TheBlackWall.jpg" alt="The Black Wall"><p>The Black Wall</p></div>
-                    <div><img src="TheMachineGhost.jpg" alt="The Machine Ghost"><p>The Machine Ghost</p></div>
-                    <div><img src="ProtocolZero.jpg" alt="Protocol Zero"><p>Protocol Zero</p></div>
-                    <div><img src="SaraAndThePrinter.jpg" alt="Sara And The Printer"><p>Sara And The Printer</p></div>
-                    <div><img src="MiAndTheLobster.jpg" alt="Mi And The Lobster"><p>Mi And The Lobster</p></div>
-                    <div><img src="MerjanSkincare.jpg" alt="Merjam And The Korean Skincare"><p>Merjam And The Korean Skincar</p></div>
-                </div>
-                
-    </section>
-</main>
+    <section class="books">
+        <div class="genre">
+            <h2>GENRES</h2>
+            <h3>FANTASY</h3>
+            <div class="items">
+                <div class="bookcard">
+            <img src="TheCurseOfIvan.jpg" alt="The Curse Of Ivan">
+            <p><b>The Curse Of Ivan</b></p>
+            <p>This is a summary.</p>
+            <p>
+                <mark>
+                    <strong>99:-</strong>
+                </mark>
+            </p>
+            <button>Add To Cart</button>
+        </div>
 
-    <footer>&copy; Website Created by: Frida Jóhannesson 2025. Contact me by <a href="mailto:fridasanneamanda@gmail.com">mail.</a>
-    <address>Storkvägen 22, 291 95. Kristianstad.</address>
+        <div class="bookcard">
+            <img src="TheElixir.jpg" alt="The Elixir">
+            <p><b>The Elixir</b></p>
+            <p>This is a summary.</p>
+            <p>119:-</p>
+            <button>Add To Cart</button>
+        </div>
+
+        <div class="bookcard">
+            <img src="TheSagaOfGöte.jpg" alt="The Saga Of Göte">
+            <p>The Saga Of Göte</p>
+            <p>This is a summary.</p>
+            <p>159:-</p>
+            <button>Add To Cart</button>
+        </div>
+          </div>
+        </div>
+
+        <div class="genre">
+        <h3>HORROR</h3>
+        <div class="items">
+            <div class="bookcard">
+        <img src="TheSkeletonCrew.jpg" alt="The Skeleton Crew">
+        <p>The Skeleton Crew</p>
+            <p>This is a summary.</p>
+            <p>159:-</p>
+            <button>Buy</button>        
+    </div>
+        </div>
+        </div>
+    </section>
+
+    <div class="genre">
+        <h3>SCIENCE FICTION</h3>
+        <div class="items">
+            <div class="bookcard">
+            <img src="TheBlackWall.jpg" 
+            alt="The Black Wall">   
+            <p>The Blackwall</p>      
+        </div>
+
+        <div class="bookcard">
+            <img src="ProtocolZero.jpg" 
+            alt="Protocol Zero">
+            <p>Protocol Zero</p>
+        </div>
+        <div class="bookcard">
+        <img src="TheMachineGhost.jpg" 
+        alt="The Machine Ghost">
+        <p>The Machine Ghost</p>
+    </div>
+        </div>
+    </div>
+
+    <div class="genre">
+        <h3>CHILDREN'S BOOKS</h3>
+        <div class="items">
+
+        <div class="bookcard">
+            <img src="MerjanSkincare.jpg" alt="Merjam and Koran Skincare">
+            <p>Merjam And The Korean Skincare</p>
+        </div>
+
+        <div class="bookcard">
+        <img src="MiAndTheLobster.jpg" alt="Mi And The Lobster">
+        <p>Mi And The Lobster</p>
+    </div>
+
+    <div class="bookcard">
+        <img src="SaraAndThePrinter.jpg" alt="Sara And The Magic Tiny Printer">
+        <p>Sara And The Magic Tiny Printer</p>
+    </div>
+        </div>
+    </div>
+
+    <div class="genre">
+        <h3>HISTORY</h3>
+        <div class="items">
+            <div class="bookcard">
+        <img src="IcelandicHistory.jpg" alt="Icelandic History">
+        <p>Icelandic History</p>
+    </div>
+    </div>
+    </div>
+
+    <div class="sortByPrice">
+        <h2>Sort By Price</h2>
+    </div>
+
+    <div class="sortByAuthor">
+        <h2>Sort By Author</h2>
+    </div>
+    </main>
+
+<footer>
+    <p>© The Book Tree Website Created by: Frida Jóhannesson 2025. <br> Storkvägen 22, 291 95 Kristianstad. <br>
+        Contact me by <a href="mailto:fridasanneamanda@gmail.com">email.</a>
+    </p>
 </footer>
+
     
 </body>
 </html>
