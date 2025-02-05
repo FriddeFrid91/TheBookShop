@@ -50,14 +50,6 @@ a {
     color: black;
 }
 
-
-/*.books {
-    display: grid;
-    margin: 10px;
-    grid-template-areas: 
-    "book book book";
-}*/
-
 h3 {
     padding: 20px;
     display: flex;
@@ -66,7 +58,9 @@ h3 {
 }
 
 nav ul li {
+    padding: 50px;
     display: flex;
+    justify-content: center;
     text-align: center;
     align-items: center;
 }
@@ -81,12 +75,13 @@ h2 {
 .genre {
     display: flex;
     flex-direction: column;
+    justify-content: center;
+    
 }
 
 .items {
     display: grid;
     grid-template-columns: repeat(3, 1fr);
-   
     align-items: center;
 }
 
@@ -116,6 +111,7 @@ footer {
     justify-content: center;
     grid-area: footer;
 }
+
 .bookcard img {
     border-radius: 5px;
 }
@@ -135,12 +131,19 @@ button {
     background-color: rgb(162, 209, 231);
 }
 
-.books {
-    display: flex;
-    flex-direction: column;  
+main {
+    grid-area: main;
+    margin: 20px;
+    background-color: red;
 }
 
-
+main .bookcard {
+    background-color: yellow;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    
+}
 button:hover {
     background-color: rgb(216, 227, 244);
 }
@@ -172,6 +175,7 @@ button:hover {
     border-radius: 20px;
     border-width: 10px;
 }
+
 main {
     grid-area: main;
 }
@@ -195,8 +199,6 @@ aside {
     padding: 20px;
 }
 
-
-
 .sidebar ul:hover {
     padding: 20px;
     border-radius: 10px;
@@ -218,17 +220,20 @@ aside {
         display: flex;
         flex-direction: column;
         justify-content: center;
-
     }
 
     aside {
         position: relative;
+       
+    }
+    sidebar {
+        background-color: yellow;
     }
 
     nav ul li {
+        padding: 5px;
         display: flex;
         flex-direction: column;
-    
     }
 
     header {
