@@ -9,18 +9,43 @@
 </head>
 <body>
     <header class="header"> 
-        <img src="TheBookTreeLogo.jpg" class="the-logo" alt="Logo for The Book Tree"></img>
+        <img src="TheBookTreeLogo.ico" class="the-logo" alt="Logo for The Book Tree"></img>
         <h1>The Book Tree</h1>
         <nav>
             <ul>
             <li><a href="index.html">HOME</a></li> 
-            <li><a href="#">CATEGORIES</a></li> 
+            <li><a href="index.html">CATEGORIES</a></li> 
             <li><a href="cart.html">CART</a></li>
         </ul>
     </nav>
     </header>
-    <main>Main
-        <button><a href="index.html">Back to Main Page</a></button>
+    <main>
+        <h2>CHECK-OUT</h2>
+        
+            <div class="genre">
+            <div class="bookcard">
+            <img src="TheCurseOfIvan.jpg" alt="The Curse Of Ivan">
+            <label for="quantity">Quantity:</label>
+            <input type="number" id="quantity" name="quantity" min="1" max="5">
+            <button><a href="index.html">Remove</a></button>
+            </div>
+
+            <div class="bookcard">
+            <img src="TheSkeletonCrew.jpg" alt="The Skeleton Crew">
+            <label for="quantity">Quantity:</label>
+            <input type="number" id="quantity" name="quantity" min="1" max="5">
+            <button><a href="index.html">Remove</a></button>
+            </div>
+        
+        </section>
+
+        <section class="checkout">
+            <button><a href="index.html">Back to Main Page</a></button>
+            <button>Purchase</button>
+        </section>
+
+        
+       
     </main>
 
     <footer>

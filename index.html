@@ -5,53 +5,62 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>The Book Tree</title>
     <link rel="stylesheet" href="style.css">
+    <link rel="icon" href="TheBookTreeLogo.ico">
 </head>
 <body>
 
     <header class="header"> 
-        <img src="TheBookTreeLogo.jpg" class="the-logo" alt="Logo for The Book Tree"></img>
+        <img src="TheBookTreeLogo.ico" class="the-logo" alt="Logo for The Book Tree"></img>
         <h1>The Book Tree</h1>
         <nav>
-            <ul>
-            <li><a href="#">HOME</a></li> 
+            <ul><li><a href="#">HOME</a></li> 
             <li><a href="#">CATEGORIES</a></li> 
             <li><a href="cart.html">CART</a></li>
         </ul>
     </nav>
     </header>
+    
     <aside class="sidebar">
         <h2>CATEGORIES</h2>
+        <ul><a href="#fantasy">FANTASY</a></ul>
         <ul><a href="#horror">HORROR</a></ul>
-<ul><a href="#science-fiction">SCIENCE FICTION</a></ul>
-<ul><a href="#drama">DRAMA</a></ul>
-<ul><a href="#children">CHILDREN</a></ul>
-<ul><a href="#history">HISTORY</a></ul>
-
+        <ul><a href="#science-fiction">SCIENCE FICTION</a></ul>
+        <ul><a href="#drama">DRAMA</a></ul>
+        <ul><a href="#childrens">CHILDREN</a></ul>
+        <ul><a href="#history">HISTORY</a></ul>
     </aside>
+
     <main>    
     <section class="books">
-        <div class="genre">
-            <h2>GENRES</h2>
-            <h3>FANTASY</h3>
+        <section id="fantasy">
+            <div class="genre">
+                <h2>GENRES</h2>
+                <h3>FANTASY</h3>
+
             <div class="items">
                 <div class="bookcard">
-            <img src="TheCurseOfIvan.jpg" alt="The Curse Of Ivan">
-            <p><b>The Curse Of Ivan</b></p>
-            <p>This is a summary.</p>
-            <p>
-                <mark>
-                    <strong>99:-</strong>
-                </mark>
-            </p>
-            <button>Add To Cart</button>
-        </div>
-
+                    <img src="TheCurseOfIvan.jpg" alt="The Curse Of Ivan">
+                    <p><b>The Curse Of Ivan</b></p>
+                    <p>This is a summary.</p>
+                    <p>
+                        <mark>
+                            <strong>99:-</strong>
+                        </mark>
+                    </p>
+            <button><a href="cart.html">Add To Cart</a></button>
+    </div>
+    
         <div class="bookcard">
             <img src="TheElixir.jpg" alt="The Elixir">
             <p><b>The Elixir</b></p>
+            <p>Author</p>
             <p>This is a summary.</p>
-            <p>119:-</p>
-            <button>Add To Cart</button>
+            <p>
+                <mark>
+                <strong>119:-</strong>
+            </mark>
+            </p>
+            <button><a href="cart.html">Add To Cart</a></button>
         </div>
 
         <div class="bookcard">
@@ -59,86 +68,499 @@
             <p>The Saga Of Göte</p>
             <p>Author</p>
             <p>This is a summary.</p>
-            <p>159:-</p>
-            <button>Add To Cart</button>
+            <p>
+                <mark>
+                    <strong>
+                        129:-
+                    </strong>
+                </mark>
+            </p>
+            <button><a href="cart.html">Add To Cart</a></button>
         </div>
-          </div>
+       
         </div>
+    </section>
+</section>
 
         <div class="genre">
+            <section id="horror">
         <h3>HORROR</h3>
         <div class="items">
             <div class="bookcard">
         <img src="TheSkeletonCrew.jpg" alt="The Skeleton Crew">
         <p>The Skeleton Crew</p>
+        <p>Author</p>
             <p>This is a summary.</p>
-            <p>159:-</p>
-            <button>Buy</button>        
+            <p><mark><strong>79:-</strong></mark></p>
+            <button><a href="cart.html">Add To Cart</a></button>        
     </div>
         </div>
         </div>
     </section>
 
     <div class="genre">
+        <section id="science-fiction">
         <h3>SCIENCE FICTION</h3>
         <div class="items">
             <div class="bookcard">
             <img src="TheBlackWall.jpg" 
             alt="The Black Wall">   
-            <p>The Blackwall</p>      
+            <p>The Blackwall</p>
+            <p>This is a summary.</p>
+            <p><mark>
+                <strong>159:-</strong>
+            </mark>
+            </p>
+            <button><a href="cart.html">Add To Cart</a></button>     
         </div>
 
         <div class="bookcard">
             <img src="ProtocolZero.jpg" 
             alt="Protocol Zero">
             <p>Protocol Zero</p>
+            <p>This is a summary.</p>
+            <p>Author</p>
+            <p><mark>
+                <strong>149:-</strong>
+            </mark>
+            </p>
+            <button><a href="cart.html">Add To Cart</a></button>
         </div>
         <div class="bookcard">
         <img src="TheMachineGhost.jpg" 
         alt="The Machine Ghost">
         <p>The Machine Ghost</p>
+        <p>This is a summary.</p>
+            <p><mark>
+                <strong>59:-</strong>
+            </mark>
+            </p>
+            <button><a href="cart.html">Add To Cart</a>
+            </button>
     </div>
         </div>
     </div>
+</section>
 
     <div class="genre">
+        <section id="childrens">
         <h3>CHILDREN'S BOOKS</h3>
         <div class="items">
 
         <div class="bookcard">
             <img src="MerjanSkincare.jpg" alt="Merjam and Koran Skincare">
             <p>Merjam And The Korean Skincare</p>
+            <p>This is a summary.</p>
+            <p>Author</p>
+            <p><mark>
+                <strong>89:-</strong>
+            </mark>
+            </p>
+            <button><a href="cart.html">Add To Cart</a></button>
         </div>
 
         <div class="bookcard">
         <img src="MiAndTheLobster.jpg" alt="Mi And The Lobster">
         <p>Mi And The Lobster</p>
+        <p>Author</p>
+        <p>This is a summary.</p>
+            <p><mark>
+                <strong>109:-</strong>
+            </mark>
+            </p>
+            <button><a href="cart.html">Add To Cart</a></button> 
     </div>
 
     <div class="bookcard">
         <img src="SaraAndThePrinter.jpg" alt="Sara And The Magic Tiny Printer">
         <p>Sara And The Magic Tiny Printer</p>
+        <p>Author</p>
+        <p>This is a summary.</p>
+            <p><mark>
+                <strong>159:-</strong>
+            </mark>
+            </p>
+            <button><a href="cart.html">Add To Cart</a></button>
     </div>
         </div>
     </div>
 
     <div class="genre">
+        <section id="history">
         <h3>HISTORY</h3>
         <div class="items">
             <div class="bookcard">
         <img src="IcelandicHistory.jpg" alt="Icelandic History">
         <p>Icelandic History</p>
+        <p>This is a summary.</p>
+            <p><mark>
+                <strong>119:-</strong>
+            </mark>
+            </p>
+            <button><a href="cart.html">Add To Cart</a></button>
     </div>
     </div>
+    </section>
+    </div>
+
+    <section id="sortByPrice">
+        <div class="genre">
+        <h2>Sort By Price</h2>
+        <div class="items">
+            <div class="bookcard">
+                <img src="TheMachineGhost.jpg">
+                <p><b>The Machine Ghost</b></p>
+                <p>Author</p>
+        <p>This is a summary.</p>
+            <p><mark>
+                <strong>59:-</strong>
+            </mark>
+            </p>
+            <button><a href="cart.html">Add To Cart</a>
+            </button>
+            </div>
+
+            <div class="bookcard">
+                <img src="TheSkeletonCrew.jpg">
+                <p><b>The Skeleton Crew</b></p>
+                <p>Author</p>
+                <p>This is a summary.</p>
+            <p><mark>
+                <strong>79:-</strong>
+            </mark>
+            </p>
+            <button><a href="cart.html">Add To Cart</a>
+            </div>
+
+            <div class="bookcard">
+                <img src="MerjanSkincare.jpg">
+                <p><b>Merjam And The Korean Skincare</b></p>
+                <p>Author</p>
+                <p>This is a summary.</p>
+            <p><mark>
+                <strong>89:-</strong>
+            </mark>
+            </p>
+            <button><a href="cart.html">Add To Cart</a>
+            </div>
+
+            <div class="bookcard">
+                <img src="TheCurseOfIvan.jpg">
+                <p><b>The Curse Of Ivan</b></p>
+                <p>Author</p>
+                <p>This is a summary.</p>
+            <p><mark>
+                <strong>99:-</strong>
+            </mark>
+            </p>
+            <button><a href="cart.html">Add To Cart</a>
+            </div>
+
+            <div class="bookcard">
+                <img src="MiAndTheLobster.jpg">
+                <p><b>Mi And The Lobster</b></p>
+                <p>Author</p>
+                <p>This is a summary.</p>
+            <p><mark>
+                <strong>109:-</strong>
+            </mark>
+            </p>
+            <button><a href="cart.html">Add To Cart</a>
+            </div>
+
+            <div class="bookcard">
+                <img src="TheElixir.jpg">
+                <p><b>The Elixir</b></p>
+                <p>Author</p>
+                <p>This is a summary.</p>
+            <p><mark>
+                <strong>119:-</strong>
+            </mark>
+            </p>
+            <button><a href="cart.html">Add To Cart</a>
+            </div>
+
+            <div class="bookcard">
+                <img src="IcelandicHistory.jpg">
+                <p><b>Mi And The Lobster</b></p>
+                <p>Author</p>
+                <p>This is a summary.</p>
+            <p><mark>
+                <strong>119:-</strong>
+            </mark>
+            </p>
+            <button><a href="cart.html">Add To Cart</a>
+            </div>
+
+            <div class="bookcard">
+                <img src="TheSagaOfGöte.jpg">
+                <p><b>The Saga Of Göte</b></p>
+                <p>Author</p>
+                <p>This is a summary.</p>
+            <p><mark>
+                <strong>109:-</strong>
+            </mark>
+            </p>
+            <button><a href="cart.html">Add To Cart</a>
+            </div>
+
+            <div class="bookcard">
+                <img src="ProtocolZero.jpg">
+                <p><b>Mi And The Lobster</b></p>
+                <p>Author</p>
+                <p>This is a summary.</p>
+            <p><mark>
+                <strong>149:-</strong>
+            </mark>
+            </p>
+            <button><a href="cart.html">Add To Cart</a>
+            </div>
+
+            <div class="bookcard">
+                <img src="TheBlackWall.jpg">
+                <p><b>The Blackwall</b></p>
+                <p>Author</p>
+                <p>This is a summary.</p>
+            <p><mark>
+                <strong>159:-</strong>
+            </mark>
+            </p>
+            <button><a href="cart.html">Add To Cart</a>
+            </div>
+
+            <div class="bookcard">
+                <img src="SaraAndThePrinter.jpg">
+                <p><b>Sara And The Magic Tiny Printer</b></p>
+                <p>Author</p>
+                <p>This is a summary.</p>
+            <p><mark>
+                <strong>159:-</strong>
+            </mark>
+            </p>
+            <button><a href="cart.html">Add To Cart</a>
+            </div>
+        </div>
+        </div>
+    </section>
     </div>
 
     <div class="sortByPrice">
+    <div class="genre">
         <h2>Sort By Price</h2>
-    </div>
+        <div class="items">
 
-    <div class="sortByAuthor">
-        <h2>Sort By Author</h2>
+            <div class="bookcard">
+                <img src="TheBlackWall.jpg">
+                <p><b>The Blackwall</b></p>
+                <p>By Laura Mitchell</p>
+                <p>This is a summary.</p>
+                <p><mark><strong>159:-</strong></mark></p>
+                <button><a href="cart.html">Add To Cart</a></button>
+            </div>
+
+            <div class="bookcard">
+                <img src="TheElixir.jpg">
+                <p><b>The Elixir</b></p>
+                <p>By Nora Fitzgerald</p>
+                <p>This is a summary.</p>
+                <p><mark><strong>119:-</strong></mark></p>
+                <button><a href="cart.html">Add To Cart</a></button>
+            </div>
+
+            <div class="bookcard">
+                <img src="SaraAndThePrinter.jpg">
+                <p><b>Sara And The Magic Tiny Printer</b></p>
+                <p>By Ethan Clarke</p>
+                <p>This is a summary.</p>
+                <p><mark><strong>159:-</strong></mark></p>
+                <button><a href="cart.html">Add To Cart</a></button>
+            </div>
+
+            <div class="bookcard">
+                <img src="ProtocolZero.jpg">
+                <p><b>Protocol Zero</b></p>
+                <p>By Daniel Cross</p>
+                <p>This is a summary.</p>
+                <p><mark><strong>149:-</strong></mark></p>
+                <button><a href="cart.html">Add To Cart</a></button>
+            </div>
+
+            <div class="bookcard">
+                <img src="TheMachineGhost.jpg">
+                <p><b>The Machine Ghost</b></p>
+                <p>By John Carter</p>
+                <p>This is a summary.</p>
+                <p><mark><strong>59:-</strong></mark></p>
+                <button><a href="cart.html">Add To Cart</a></button>
+            </div>
+
+            <div class="bookcard">
+                <img src="MerjanSkincare.jpg">
+                <p><b>Merjam And The Korean Skincare</b></p>
+                <p>By Sophia Lee</p>
+                <p>This is a summary.</p>
+                <p><mark><strong>89:-</strong></mark></p>
+                <button><a href="cart.html">Add To Cart</a></button>
+            </div>
+
+            <div class="bookcard">
+                <img src="TheSkeletonCrew.jpg">
+                <p><b>The Skeleton Crew</b></p>
+                <p>By Emily Watson</p>
+                <p>This is a summary.</p>
+                <p><mark><strong>79:-</strong></mark></p>
+                <button><a href="cart.html">Add To Cart</a></button>
+            </div>
+
+            <div class="bookcard">
+                <img src="IcelandicHistory.jpg">
+                <p><b>Icelandic History</b></p>
+                <p>By Magnus Bjornsson</p>
+                <p>This is a summary.</p>
+                <p><mark><strong>119:-</strong></mark></p>
+                <button><a href="cart.html">Add To Cart</a></button>
+            </div>
+
+            <div class="bookcard">
+                <img src="TheCurseOfIvan.jpg">
+                <p><b>The Curse Of Ivan</b></p>
+                <p>By Alexander Petrov</p>
+                <p>This is a summary.</p>
+                <p><mark><strong>99:-</strong></mark></p>
+                <button><a href="cart.html">Add To Cart</a></button>
+            </div>
+
+            <div class="bookcard">
+                <img src="MiAndTheLobster.jpg">
+                <p><b>Mi And The Lobster</b></p>
+                <p>By Olivia Bennett</p>
+                <p>This is a summary.</p>
+                <p><mark><strong>109:-</strong></mark></p>
+                <button><a href="cart.html">Add To Cart</a></button>
+            </div>
+
+            <div class="bookcard">
+                <img src="TheSagaOfGöte.jpg">
+                <p><b>The Saga Of Göte</b></p>
+                <p>By Erik Johansson</p>
+                <p>This is a summary.</p>
+                <p><mark><strong>109:-</strong></mark></p>
+                <button><a href="cart.html">Add To Cart</a></button>
+            </div>
+
+        </div>
     </div>
+</div>
+</section>
+
+<div class="sortByAuthor">
+    <div class="genre">
+        <h2>Sort By Author</h2>
+        <div class="items">
+
+            <div class="bookcard">
+                <img src="IcelandicHistory.jpg">
+                <p><b>Icelandic History</b></p>
+                <p>By Magnus Bjornsson</p>
+                <p>This is a summary.</p>
+                <p><mark><strong>119:-</strong></mark></p>
+                <button><a href="cart.html">Add To Cart</a></button>
+            </div>
+
+            <div class="bookcard">
+                <img src="MiAndTheLobster.jpg">
+                <p><b>Mi And The Lobster</b></p>
+                <p>By Olivia Bennett</p>
+                <p>This is a summary.</p>
+                <p><mark><strong>109:-</strong></mark></p>
+                <button><a href="cart.html">Add To Cart</a></button>
+            </div>
+
+            <div class="bookcard">
+                <img src="SaraAndThePrinter.jpg">
+                <p><b>Sara And The Magic Tiny Printer</b></p>
+                <p>By Ethan Clarke</p>
+                <p>This is a summary.</p>
+                <p><mark><strong>159:-</strong></mark></p>
+                <button><a href="cart.html">Add To Cart</a></button>
+            </div>
+
+            <div class="bookcard">
+                <img src="ProtocolZero.jpg">
+                <p><b>Protocol Zero</b></p>
+                <p>By Daniel Cross</p>
+                <p>This is a summary.</p>
+                <p><mark><strong>149:-</strong></mark></p>
+                <button><a href="cart.html">Add To Cart</a></button>
+            </div>
+
+            <div class="bookcard">
+                <img src="TheMachineGhost.jpg">
+                <p><b>The Machine Ghost</b></p>
+                <p>By John Carter</p>
+                <p>This is a summary.</p>
+                <p><mark><strong>59:-</strong></mark></p>
+                <button><a href="cart.html">Add To Cart</a></button>
+            </div>
+
+            <div class="bookcard">
+                <img src="TheElixir.jpg">
+                <p><b>The Elixir</b></p>
+                <p>By Nora Fitzgerald</p>
+                <p>This is a summary.</p>
+                <p><mark><strong>119:-</strong></mark></p>
+                <button><a href="cart.html">Add To Cart</a></button>
+            </div>
+
+            <div class="bookcard">
+                <img src="TheSagaOfGöte.jpg">
+                <p><b>The Saga Of Göte</b></p>
+                <p>By Erik Johansson</p>
+                <p>This is a summary.</p>
+                <p><mark><strong>109:-</strong></mark></p>
+                <button><a href="cart.html">Add To Cart</a></button>
+            </div>
+
+            <div class="bookcard">
+                <img src="MerjanSkincare.jpg">
+                <p><b>Merjam And The Korean Skincare</b></p>
+                <p>By Sophia Lee</p>
+                <p>This is a summary.</p>
+                <p><mark><strong>89:-</strong></mark></p>
+                <button><a href="cart.html">Add To Cart</a></button>
+            </div>
+
+            <div class="bookcard">
+                <img src="TheBlackWall.jpg">
+                <p><b>The Blackwall</b></p>
+                <p>By Laura Mitchell</p>
+                <p>This is a summary.</p>
+                <p><mark><strong>159:-</strong></mark></p>
+                <button><a href="cart.html">Add To Cart</a></button>
+            </div>
+
+            <div class="bookcard">
+                <img src="TheCurseOfIvan.jpg">
+                <p><b>The Curse Of Ivan</b></p>
+                <p>By Alexander Petrov</p>
+                <p>This is a summary.</p>
+                <p><mark><strong>99:-</strong></mark></p>
+                <button><a href="cart.html">Add To Cart</a></button>
+            </div>
+
+            <div class="bookcard">
+                <img src="TheSkeletonCrew.jpg">
+                <p><b>The Skeleton Crew</b></p>
+                <p>By Emily Watson</p>
+                <p>This is a summary.</p>
+                <p><mark><strong>79:-</strong></mark></p>
+                <button><a href="cart.html">Add To Cart</a></button>
+            </div>
+
+        </div>
+    </div>
+</div>
+</section>
     </main>
 
 <footer>
@@ -146,7 +568,6 @@
         Contact me by <a href="mailto:fridasanneamanda@gmail.com">email.</a>
     </p>
 </footer>
-
     
 </body>
 </html>
