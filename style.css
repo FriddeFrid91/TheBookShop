@@ -18,7 +18,7 @@ body {
 }
 
 p {
-    padding: 5px;
+    padding: 4px;
 }
 
 .the-logo {
@@ -51,7 +51,7 @@ a {
 }
 
 h3 {
-    padding: 20px;
+    padding: 10px;
     display: flex;
     justify-content: center;
     background-color: rgb(132, 205, 188);
@@ -66,7 +66,6 @@ nav ul li {
 }
 
 h2 {
-    padding: 20px;
     display: flex;
     justify-content: center;
     background-color: rgb(132, 205, 188);
@@ -86,7 +85,7 @@ h2 {
 }
 
 .genre img {
-    width: 90px;
+    width: 75px;
 }
 
 header {
@@ -172,6 +171,7 @@ button:hover {
 
 .bookcard { 
     height: 80%;
+    margin: 10px;
     padding-top: 20px;
     padding-bottom: 20px;
     display: flex;
@@ -180,7 +180,7 @@ button:hover {
     text-align: center;
     flex-direction: column;
     background-color: rgb(221, 234, 175);
-    box-shadow: 10px 10px 5px 10px rgb(67, 70, 72);
+    box-shadow: 10px 5px 10px rgb(67, 70, 72);
     border-radius: 20px;
     border-width: 10px;
 }
