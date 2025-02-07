@@ -11,6 +11,7 @@
     <header class="header"> 
         <img src="TheBookTreeLogo.ico" class="the-logo" alt="Logo for The Book Tree"></img>
         <h1>The Book Tree</h1>
+        <h1 id="static">This is a static representation of your</h2>
         <nav>
             <ul>
             <li><a href="index.html">HOME</a></li> 
@@ -21,9 +22,10 @@
     </header>
     <main>
         <h2>CHECK-OUT</h2>      
-        <section class="genre">
+        <section class="checkout-container">
+            <section class="checkout-book">
             <section class="bookcard">
-            <img src="TheCurseOfIvan.jpg" alt="The Curse Of Ivan">
+            <img src="/BookCovers/TheCurseOfIvan.jpg" alt="The Curse Of Ivan">
             <p><b>The Curse Of Ivan</b></p>
                 <p>By Alexander Petrov
                 </p>
@@ -33,29 +35,37 @@
             </mark>
             </p>
             <label for="quantity">Quantity:</label>
-            <input type="number" id="quantity" name="quantity" min="1" max="5">
-            <button><a href="index.html">Remove</a></button>
+            <input type="number" id="quantity" name="quantity" min="1" value="1" max="5">
+        </section>
             </section>
+        <section class="remove">
+            <button id="remove-button"><a href="index.html">Remove</a></button>
+        </section>
+        
 
+        <section class="checkout-book">
             <section class="bookcard">
-            <img src="TheSkeletonCrew.jpg" alt="The Skeleton Crew">
+            <img src="/BookCovers/TheSkeletonCrew.jpg" alt="The Skeleton Crew">
             <p><b>Skeleton Crew</b></p>
             <p>By Emily Watson</p>
             <p>This is a summary.</p>
             <p><mark><strong>79:-</strong></mark></p>
             <label for="quantity">Quantity:</label>
-            <input type="number" id="quantity" name="quantity" min="1" max="5">
-            <button><a href="index.html">Remove</a></button>
+            <input type="number" id="quantity" name="quantity" min="1" value="1" max="5">
             </section>
         </section>
     
-
-    <section class="cart">
-        <p><b>Total cost: 178:-</b></p>
-        <button><a href="index.html">Back to Main Page</a></button>
-        <button>Purchase</button>
-
-    </section>
+        <section class="remove">
+     
+            <button id="remove-button"><a href="index.html">Remove</a></button>
+        </section>
+        <section class="totalPrice">
+            <p><b>Total cost: 178:-</b></p>
+            <button id="main-page-btn"><a href="index.html">Back to Main Page</a></button>
+            <button id="purchase-btn">Continue With Purchase</button>
+            </section>
+        </section>
+        
     </main>
 
     <footer>

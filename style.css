@@ -9,9 +9,7 @@ body {
     "sidebar main extra"
     "footer footer footer";
     background-color: rgb(132, 205, 188);
-    font-family: Cambria, 
-    Cochin, Georgia, Times, 
-    'Times New Roman', serif;
+    font-family: Arial;
 }
 .books {
     padding: 20px;
@@ -22,7 +20,7 @@ p {
 }
 
 .the-logo {
-    border-radius: 50px;
+    border-radius: 50%;
     width: 100px;
     height: 100px;
 }
@@ -45,7 +43,6 @@ a:hover {
 }
 
 a {
-    transition: 0.9s;
     text-decoration: none;
     color: black;
 }
@@ -53,7 +50,7 @@ a {
 h3 {
     padding: 10px;
     display: flex;
-    justify-content: center;
+    justify-content: center; /*Justerar så att innehållet blir centrerar längs main axis*/
     background-color: rgb(132, 205, 188);
 }
 
@@ -80,7 +77,7 @@ h2 {
 
 .items {
     display: grid;
-    grid-template-columns: repeat(3, 1fr);
+    grid-template-columns: repeat(3, 1fr); /*3 lika stora kolumner. fr betyder fraction.*/
     align-items: center;
 }
 
@@ -91,14 +88,14 @@ h2 {
 header {
     align-items: center;
     display: flex;
-    flex-direction: row;
+    flex-direction: row; /*Placera innehållet i rad.*/
     background: linear-gradient(rgb(114, 222, 179), rgb(35, 162, 167), rgb(35, 162, 167));
     padding: 10px;
     grid-area: header;
 }
 
 header h1 {
-    flex-grow: 1;
+    width: 100%;
     padding: 25px;
 }
 
@@ -135,38 +132,79 @@ button {
 
 main {
     grid-area: main;
-    margin: 20px;
-  
+    margin: 20px;  
+}
+
+.checkout-container {
+    display: grid;
+    padding: 20px;
+    grid-template-columns: repeat(2, 1fr); /*Två kolumner*/
+    grid-template-rows: auto auto auto; /*Tre rader totalt*/
+    border-radius: 20px;
+    background-color: rgb(221, 234, 175);
+}
+
+.checkout-container img {
+    padding: 20px;
+    width: 100px;
+}
+
+.totalPrice {
+    background-color: rgb(132, 205, 188);;
+    display: flex;
+    border-radius: 20px;
+    justify-content: flex-end;
+    padding: 10px;
+    grid-column: span 2; /*Raden täcker två kolumner.*/
+    text-align: right;
+}
+
+.remove {
+    margin: 10px;
+    display: flex;
+    align-items: center;
+    text-align: center;
+    border-radius: 20px;
+    background-color:  rgb(221, 234, 175);
+}
+
+.checkout img {
+    width: 100px;
 }
 
 main .bookcard {
     display: flex;
     justify-content: center;
     align-items: center;
-    
-}
-button:hover {
-    background-color: rgb(216, 227, 244);
 }
 
-.checkout button {
-    padding: 10px;
-    margin: 10px;
+.totalPrice {
+    background-color: rgb(235, 180, 61);
+    display: flex;
+    flex-direction: column;
+}
+
+#remove-button:hover
+ {
+    background-color: red;
+} 
+
+button:hover {
+    background-color: rgb(216, 227, 244);
 }
 
 .cart {
     margin: 10px;
     border-style: solid;
-    border-color: rgb(35, 162, 167);;
-    background-color: rgb(31, 52, 47);;
+    border-color: rgb(35, 162, 167);
     border-width: 10px;
     padding: 30px;
     border-radius: 15px;
     display: flex;
-    text-align: center;
+    text-align: right;
     flex-direction: column;
     justify-content: center;
-    background-color: rgb(221, 234, 175);;
+    background-color: rgb(221, 234, 175);
 }
 
 .bookcard { 
@@ -190,8 +228,7 @@ main {
 }
 
 aside {
-    position: sticky; /*Ser till att sidebaren syns hela tiden när user scrollar.*/
-    overflow-y: auto;
+    position: sticky; /*Ser till att sidebaren syns hela tiden när user scrollar. vh="viewport"*/ 
     height: 100vh; /*Täcker hela höjden på skärmen*/
     top: 0;
     text-underline-offset: 6px;
@@ -225,6 +262,7 @@ aside {
         "main"
         "footer";
     }
+    
     ul {
         display: flex;
         flex-direction: column;
@@ -232,16 +270,18 @@ aside {
     }
 
     aside {
-        position: relative; 
+        position: static; /*Standard läge*/
+        height: 95%; /*Padding blev bättre såhär.*/
     }
-   
     nav ul li {
         padding: 5px;
         display: flex;
         flex-direction: column;
     }
-
     header {
+        width: 100%;
+        position: sticky;
+        top: 0;
         align-items: center;
         display: flex;
         flex-direction: column;
@@ -249,7 +289,7 @@ aside {
     }
 
     .the-logo {
-        border-radius: 50px;
+        border-radius: 50%;
         width: 100px;
         height: 100px;
     }
