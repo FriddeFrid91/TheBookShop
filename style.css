@@ -1,9 +1,14 @@
 * {
     margin: 0;
 }
-html {
-margin: 0;
-}
+
+html, body {
+    margin: 0;
+    padding: 0;
+    max-width: 100%;
+    overflow-x: hidden;
+  }
+  
 
 body {
     display: grid;
@@ -258,6 +263,7 @@ aside {
 }
 
 @media screen and (max-width: 1024px) {
+    
     body {
         display: grid;
         grid-template-areas: 
@@ -267,7 +273,20 @@ aside {
         "footer";
     }
 
+    section.remove {
+        background-color: rgb(132, 205, 188);
+    }
+
+    section.checkout-book {
+        background-color: rgb(132, 205, 188);
+    }
+
+    section.checkout-container {
+        background-color: rgb(132, 205, 188);
+    }
+
     main {
+        background-color: rgb(132, 205, 188);
         width: 100%;
         height: 100%;
     }
